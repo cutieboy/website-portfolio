@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ZJ Designs - About</title>
+	<link rel="stylesheet" type="text/css" href="styles-about.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="nav">
+	<div class="nav-btn">
+		<label id="nav-check-label" for="nav-check">
+			<span id="btn-line-left"></span>
+			<span id="btn-line-remove"></span>
+			<span id="btn-line-right"></span>
+		</label>
+	</div>
+
+	<input type="checkbox" id="nav-check" onclick="rotateLines()">
+
+	<div class="nav-links">
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="portfolio.html">Portfolio</a>
+		<a href="contact.html">Contact</a>
+	</div>
+</div>
+
+<div class="container">
+	<div class="header">
+		<div class="h-bg h-img1"></div>
+		<div class="h-bg h-img2">
+			<p class="h-text">My Process</p>
+		</div>
+		<div class="h-bg h-img3"></div>
+	</div>
+
+<div class="body">
+
+	<div class="slide fade discover">
+		<p class="sl-head">DISCOVER</p>
+		<img src="images/mag.png">
+		<p class="sl-body">First, we'll find out what the purpose, main goals, and target audience of this website are going to be. Then we'll determine the best route to take.</p>
+	</div>
+
+	<div class="slide fade design">
+		<p class="sl-head">DESIGN</p>
+		<img src="images/camera.png">
+		<p class="sl-body">We'll then design the page layouts, things like how many pages and what type of content. This is YOUR website, you decide what goes in it!</p>
+	</div>
+
+	<div class="slide fade develop">
+		<p class="sl-head">DEVELOP</p>
+		<img src="images/pc.png">
+		<p class="sl-body">I'll take it from here. In this stage I'll be developing fast, responsive pages for your website. I'll be using technologies like HTML, CSS, JavaScript, Express, React, and much more.</p>
+	</div>
+
+	<div class="slide fade launch">
+		<p class="sl-head">LAUNCH</p>
+		<img src="images/rocket.png">
+		<p class="sl-body">Then it's time to see your baby come to life! This is where the site is reviewed and then eventually hosted and launched.</p>
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1)"><</a>
+	<a class="next" onclick="plusSlides(1)">></a>
+</div>
+
+	<script type="text/javascript" src="script-about.js"></script>
+</body>
+</html>
