@@ -40,12 +40,12 @@
 	<!-- ADD METHOD="POST" & NETLIFY TO FORM WHEN GOING LIVE -->
 	<form class="contactContainer">
 		<p class="body-head"></p>
-		<input type="text" name="name" class="nameContainer contactInput" placeholder="Name">
-		<input type="text" name="email" class="emailContainer contactInput" placeholder="Email Address">
-		<input type="text" name="phoneNumber" class="phoneContainer contactInput" placeholder="Phone Number">
+		<input type="text" name="name" class="nameContainer contactInput" placeholder="Name" required>
+		<input type="email" name="email" class="emailContainer contactInput" placeholder="Email Address" required>
+		<input type="text" name="phoneNumber" class="phoneContainer contactInput" placeholder="Phone Number" required>
 		<input type="text" name="location" class="locationContainer contactInput" placeholder="Location">
-		<input type="text" name="interest" class="interestContainer contactInput" placeholder="What are you interested in?">
-		<textarea name="description" class="descriptionContainer contactInput" placeholder="What can I help you with?"></textarea>
+		<input type="text" name="interest" class="interestContainer contactInput" placeholder="What are you interested in?" required>
+		<textarea name="description" class="descriptionContainer contactInput" placeholder="What can I help you with?" required></textarea>
 		<button type="Submit" name="start" class="submitContainer contactInput">Let's get started!</button>
 	</form>
 	<!-- <p class="body-head">Let's get in touch!</p>
