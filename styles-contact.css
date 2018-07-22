@@ -20,7 +20,7 @@ body {
 .container {
 	width: 100%;
 	display: grid;
-	grid-template-rows: 400px calc(100vh);
+	grid-template-rows: 400px calc(60vh);
 	z-index: -1;
 	grid-template-areas:
 	"image"
@@ -29,6 +29,10 @@ body {
 
 
 /*START NAV*/
+
+.nav {
+	background: var(--footer);
+}
 
 .nav-links {
 	text-align: center;
@@ -133,7 +137,7 @@ body {
 }
 
 .contactInput {
-	width: 20em;
+	width: 20.4em;
 	height: 4em;
 	background: var(--nav);
 	color: white;
@@ -165,14 +169,14 @@ body {
 .interestContainer {
 	grid-row: 4;
 	grid-column: 3 / span 2;
-	width: 43em;
+	width: 41em;
 }
 
 .descriptionContainer {
 	grid-row: 5;
 	grid-column: 3 / span 2;
 	text-align: top;
-	width: 43em;
+	width: 42em;
 	height: 10em;
 	padding-bottom: 7em;
 }
@@ -257,60 +261,57 @@ body {
 		border-top: 2px solid #00000000;
 	}
 
-	.body {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr 2fr 1fr;
-	}
-
 	.body-head {
 		grid-area: 1 / 1;
 		font-size: 50px;
 		margin-left: 0.5em;
 	}
 
+	.contactContainer {
+		grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 2fr 1fr;
+	}
+
 	.contactInput {
-		width: 12em;
-		height: 3em;
-		margin: 10px;
-		margin-right: 10px;
-		margin-left: 10px;
-		font-size: 36px;
+		width: 80%;
+		height: 4vh;
+		margin: 0;
+		font-size: 3vw;
 	}
 
 	.nameContainer {
-	grid-area: 2 / 1;
-	}
-
-	.emailContainer {
 	grid-area: 2 / 2;
 	}
 
-	.phoneContainer {
-	grid-area: 3 / 1;
+	.emailContainer {
+	grid-area: 2 / 3;
 	}
 
-	.locationContainer {
+	.phoneContainer {
 	grid-area: 3 / 2;
 	}
 
+	.locationContainer {
+	grid-area: 3 / 3;
+	}
+
 	.interestContainer {
-	grid-area: 4 / span 2;
+	grid-column: 2 / span 2;
+	grid-row: 4;
+	width: 90.5%;
 	}
 
 	.descriptionContainer {
-	grid-area: 5 / span 2;
+	grid-column: 2 / span 2;
+	grid-row: 5;
+	width: 90.5%;
+	height: 100%;
+	font-size: 18px;
+	padding: 10px;
 	}
 
 	.submitContainer {
-	grid-area: 6 / 1;
-	}
-
-	#interestInput {
-		width: 25.5em;
-	}
-
-	#descriptionInput {
-		width: 25.5em;
+	grid-area: 6 / 2;
 	}
 
 	.submitInput:hover {
@@ -322,7 +323,7 @@ body {
 @media only screen and (max-width: 1000px/*1000px*/) {
 
 	.container {
-		grid-template-rows: calc(100vh) calc(100vh);
+		grid-template-rows: calc(100vh) calc(50vh);
 	}
 
 	.header {
